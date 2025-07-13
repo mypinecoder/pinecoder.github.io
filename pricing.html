@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans - Algorithmic Trading Development | PineCoder.in</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Transparent pricing for algorithmic trading development services. Choose from starter, professional, or enterprise plans. Custom solutions available.">
+    <meta name="keywords" content="algo trading pricing, trading bot cost, strategy development fees, algorithmic trading services cost">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-gray-300">
+
+    <!-- Navigation (Same as homepage) -->
+    <nav id="navbar" class="sticky top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold">
+                        <span class="text-white">Pine</span><span class="gradient-text">Coder.in</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-300 hover:text-white transition-colors">Home</a>
+                    <a href="/#services" class="text-gray-300 hover:text-white transition-colors">Services</a>
+                    <a href="/portfolio.html" class="text-gray-300 hover:text-white transition-colors">Portfolio</a>
+                    <a href="/pricing.html" class="text-white">Pricing</a>
+                    <a href="/blog.html" class="text-gray-300 hover:text-white transition-colors">Blog</a>
+                    <a href="/about.html" class="text-gray-300 hover:text-white transition-colors">About</a>
+                    <a href="/contact.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 bg-gradient-to-b from-slate-900 to-slate-950">
+        <div class="absolute inset-0 grid-background opacity-20"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-2 bg-green-600/20 px-4 py-2 rounded-full mb-6">
+                    <i class="fas fa-tag text-green-500"></i>
+                    <span class="text-green-500 font-semibold">Limited Time: 20% Off First Strategy</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Simple, Transparent <span class="gradient-text">Pricing</span>
+                </h1>
+                <p class="text-xl text-gray-400">
+                    Choose the perfect plan for your algorithmic trading journey. No hidden fees, no surprises.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Toggle -->
+    <section class="py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center items-center gap-4">
+                <span class="text-gray-400">One-time Payment</span>
+                <button id="pricing-toggle" class="relative w-16 h-8 bg-slate-800 rounded-full p-1 cursor-pointer">
+                    <div class="absolute w-6 h-6 bg-blue-600 rounded-full transition-transform duration-300 transform translate-x-0"></div>
+                </button>
+                <span class="text-gray-400">Monthly Support</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <!-- Starter Plan -->
+                <div class="pricing-card bg-slate-900 rounded-2xl p-8 border border-slate-800 relative">
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Starter</h3>
+                        <p class="text-gray-400">Perfect for beginners</p>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-baseline">
+                            <span class="text-4xl font-bold text-white">₹</span>
+                            <span class="text-5xl font-bold text-white one-time-price">25,000</span>
+                            <span class="text-5xl font-bold text-white monthly-price hidden">5,000</span>
+                            <span class="text-gray-400 ml-2 one-time-text">/strategy</span>
+                            <span class="text-gray-400 ml-2 monthly-text hidden">/month</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2 one-time-text">One-time payment</p>
+                        <p class="text-sm text-gray-500 mt-2 monthly-text hidden">Billed monthly</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">1 Trading Strategy Development</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Basic Backtesting (1 year data)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Pine Script or Python</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">1 Broker Integration</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">30 Days Support</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-times text-gray-600 mt-1"></i>
+                            <span class="text-gray-500">Advanced Risk Management</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-times text-gray-600 mt-1"></i>
+                            <span class="text-gray-500">Real-time Monitoring</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="/contact.html?plan=starter" class="block w-full bg-slate-800 text-white text-center py-3 rounded-lg font-semibold hover:bg-slate-700 transition-colors">
+                        Get Started
+                    </a>
+                </div>
+                
+                <!-- Professional Plan (Popular) -->
+                <div class="pricing-card bg-slate-900 rounded-2xl p-8 border-2 border-blue-600 relative transform scale-105">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold">MOST POPULAR</span>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Professional</h3>
+                        <p class="text-gray-400">For serious traders</p>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-baseline">
+                            <span class="text-4xl font-bold text-white">₹</span>
+                            <span class="text-5xl font-bold text-white one-time-price">50,000</span>
+                            <span class="text-5xl font-bold text-white monthly-price hidden">10,000</span>
+                            <span class="text-gray-400 ml-2 one-time-text">/strategy</span>
+                            <span class="text-gray-400 ml-2 monthly-text hidden">/month</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2 one-time-text">One-time payment</p>
+                        <p class="text-sm text-gray-500 mt-2 monthly-text hidden">Billed monthly</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Complex Strategy Development</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Advanced Backtesting (5 years)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Any Language/Platform</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Multiple Broker Support</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">90 Days Support</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Risk Management Suite</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Performance Dashboard</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="/contact.html?plan=professional" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                        Get Started
+                    </a>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="pricing-card bg-slate-900 rounded-2xl p-8 border border-slate-800 relative">
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Enterprise</h3>
+                        <p class="text-gray-400">For institutions</p>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-baseline">
+                            <span class="text-5xl font-bold text-white">Custom</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2">Tailored to your needs</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Multiple Strategies</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Institutional Grade Systems</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Co-location Support</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Dedicated Team</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">24/7 Priority Support</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">Custom Infrastructure</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-green-500 mt-1"></i>
+                            <span class="text-gray-300">SLA Guarantee</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="/contact.html?plan=enterprise" class="block w-full bg-slate-800 text-white text-center py-3 rounded-lg font-semibold hover:bg-slate-700 transition-colors">
+                        Contact Sales
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">
+                Additional <span class="gradient-text">Services & Add-ons</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <i class="fas fa-chart-line text-blue-500 text-2xl mb-4"></i>
+                    <h3 class="text-lg font-semibold text-white mb-2">Advanced Backtesting</h3>
+                    <p class="text-gray-400 text-sm mb-4">10+ years historical data with walk-forward analysis</p>
+                    <p class="text-2xl font-bold text-white">₹15,000</p>
+                </div>
+                
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <i class="fas fa-brain text-purple-500 text-2xl mb-4"></i>
+                    <h3 class="text-lg font-semibold text-white mb-2">ML Integration</h3>
+                    <p class="text-gray-400 text-sm mb-4">Add machine learning models to your strategy</p>
+                    <p class="text-2xl font-bold text-white">₹25,000</p>
+                </div>
+                
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <i class="fas fa-server text-green-500 text-2xl mb-4"></i>
+                    <h3 class="text-lg font-semibold text-white mb-2">VPS Hosting</h3>
+                    <p class="text-gray-400 text-sm mb-4">Dedicated cloud hosting with monitoring</p>
+                    <p class="text-2xl font-bold text-white">₹3,000/mo</p>
+                </div>
+                
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <i class="fas fa-code-branch text-yellow-500 text-2xl mb-4"></i>
+                    <h3 class="text-lg font-semibold text-white mb-2">Multi-Broker Setup</h3>
+                    <p class="text-gray-400 text-sm mb-4">Deploy strategy across multiple brokers</p>
+                    <p class="text-2xl font-bold text-white">₹10,000</p>
+                </div>
+                
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <i class="fas fa-shield-alt text-red-500 text-2xl mb-4"></i>
+                    <h3 class="text-lg font-semibold text-white mb-2">Risk Analytics</h3>
+                    <p class="text-gray-400 text-sm mb-4">Advanced risk metrics and portfolio analysis</p>
+                    <p class="text-2xl font-bold text-white">₹20,000</p>
+                </div>
+                
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <i class="fas fa-graduation-cap text-indigo-500 text-2xl mb-4"></i>
+                    <h3 class="text-lg font-semibold text-white mb-2">1-on-1 Training</h3>
+                    <p class="text-gray-400 text-sm mb-4">Personal training on strategy management</p>
+                    <p class="text-2xl font-bold text-white">₹5,000/hr</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">
+                Detailed <span class="gradient-text">Feature Comparison</span>
+            </h2>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full max-w-5xl mx-auto">
+                    <thead>
+                        <tr class="border-b border-slate-800">
+                            <th class="py-4 px-4 text-left text-gray-400 font-semibold">Features</th>
+                            <th class="py-4 px-4 text-center text-gray-400 font-semibold">Starter</th>
+                            <th class="py-4 px-4 text-center text-gray-400 font-semibold">Professional</th>
+                            <th class="py-4 px-4 text-center text-gray-400 font-semibold">Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-slate-800">
+                            <td class="py-4 px-4 text-gray-300">Strategy Complexity</td>
+                            <td class="py-4 px-4 text-center">Basic</td>
+                            <td class="py-4 px-4 text-center">Advanced</td>
+                            <td class="py-4 px-4 text-center">Unlimited</td>
+                        </tr>
+                        <tr class="border-b border-slate-800">
+                            <td class="py-4 px-4 text-gray-300">Backtesting Period</td>
+                            <td class="py-4 px-4 text-center">1 Year</td>
+                            <td class="py-4 px-4 text-center">5 Years</td>
+                            <td class="py-4 px-4 text-center">10+ Years</td>
+                        </tr>
+                        <tr class="border-b border-slate-800">
+                            <td class="py-4 px-4 text-gray-300">Broker Integrations</td>
+                            <td class="py-4 px-4 text-center">1</td>
+                            <td class="py-4 px-4 text-center">3</td>
+                            <td class="py-4 px-4 text-center">Unlimited</td>
+                        </tr>
+                        <tr class="border-b border-slate-800">
+                            <td class="py-4 px-4 text-gray-300">Support Period</td>
+                            <td class="py-4 px-4 text-center">30 Days</td>
+                            <td class="py-4 px-4 text-center">90 Days</td>
+                            <td class="py-4 px-4 text-center">1 Year+</td>
+                        </tr>
+                        <tr class="border-b border-slate-800">
+                            <td class="py-4 px-4 text-gray-300">Source Code</td>
+                            <td class="py-4 px-4 text-center">
+                                <i class="fas fa-check text-green-500"></i>
+                            </td>
+                            <td class="py-4 px-4 text-center">
+                                <i class="fas fa-check text-green-500"></i>
+                            </td>
+                            <td class="py-4 px-4 text-center">
+                                <i class="fas fa-check text-green-500"></i>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-800">
+                            <td class="py-4 px-4 text-gray-300">Performance Dashboard</td>
+                            <td class="py-4 px-4 text-center">
+                                <i class="fas fa-times text-gray-600"></i>
+                            </td>
+                            <td class="py-4 px-4 text-center">
+                                <i class="fas fa-check text-green-500"></i>
+                            </td>
+                            <td class="py-4 px-4 text-center">
+                                <i class="fas fa-check text-green-500"></i>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-800">
+                            <td class="py-4 px-4 text-gray-300">Risk Management</td>
+                            <td class="py-4 px-4 text-center">Basic</td>
+                            <td class="py-4 px-4 text-center">Advanced</td>
+                            <td class="py-4 px-4 text-center">Institutional</td>
+                        </tr>
+                        <tr class="border-b border-slate-800">
+                            <td class="py-4 px-4 text-gray-300">API Rate Limits</td>
+                            <td class="py-4 px-4 text-center">Standard</td>
+                            <td class="py-4 px-4 text-center">Priority</td>
+                            <td class="py-4 px-4 text-center">Unlimited</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">
+                Pricing <span class="gradient-text">FAQs</span>
+            </h2>
+            
+            <div class="space-y-4">
+                <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-800/50 transition-colors" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-white">Are there any hidden fees?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 pt-0 text-gray-400">
+                            No, we believe in complete transparency. The prices shown include everything - development, testing, deployment, and the specified support period. The only additional costs might be for optional add-ons or extended support.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-800/50 transition-colors" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-white">What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 pt-0 text-gray-400">
+                            We accept bank transfers (NEFT/RTGS/IMPS), UPI payments, and international wire transfers. For enterprise clients, we can also set up custom payment arrangements.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-800/50 transition-colors" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-white">Do you offer refunds?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 pt-0 text-gray-400">
+                            We offer a 7-day money-back guarantee if we haven't started development. Once development begins, we follow a milestone-based approach where you approve each phase before proceeding.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-800/50 transition-colors" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-white">Can I upgrade my plan later?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 pt-0 text-gray-400">
+                            Yes, you can upgrade at any time. We'll credit the amount you've already paid towards the higher plan. For example, if you move from Starter to Professional, you only pay the difference.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Money Back Guarantee -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-green-900/30 to-blue-900/30 rounded-2xl p-12 text-center border border-green-600/30 max-w-4xl mx-auto">
+                <i class="fas fa-shield-alt text-green-500 text-5xl mb-6"></i>
+                <h2 class="text-3xl font-bold text-white mb-4">100% Satisfaction Guarantee</h2>
+                <p class="text-xl text-gray-400 mb-8">
+                    We're confident in our work. If you're not satisfied with the strategy development, 
+                    we'll work with you until you are or provide a full refund.
+                </p>
+                <div class="flex flex-col md:flex-row gap-6 justify-center">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                        <span class="text-gray-300">7-Day Money Back</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                        <span class="text-gray-300">Free Revisions</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                        <span class="text-gray-300">Lifetime Updates</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to Start Trading Algorithmically?</h2>
+            <p class="text-xl text-gray-400 mb-8">Get a free consultation and 20% off your first strategy</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="/contact.html" class="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    Get Started Now <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="https://wa.me/917499462967" target="_blank" class="inline-flex items-center gap-2 bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-500">
+                    © 2025 PineCoder.in. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-blur');
+            } else {
+                navbar.classList.remove('navbar-blur');
+            }
+        });
+
+        // Pricing Toggle
+        const pricingToggle = document.getElementById('pricing-toggle');
+        const toggleIndicator = pricingToggle.querySelector('div');
+        const oneTimePrices = document.querySelectorAll('.one-time-price');
+        const monthlyPrices = document.querySelectorAll('.monthly-price');
+        const oneTimeTexts = document.querySelectorAll('.one-time-text');
+        const monthlyTexts = document.querySelectorAll('.monthly-text');
+
+        let isMonthly = false;
+
+        pricingToggle.addEventListener('click', function() {
+            isMonthly = !isMonthly;
+            const indicator = pricingToggle.querySelector('div');
+            // Toggle a class on the indicator
+            indicator.classList.toggle('translate-x-[2rem]', isMonthly);
+            
+            if (isMonthly) {
+                oneTimePrices.forEach(el => el.classList.add('hidden'));
+                monthlyPrices.forEach(el => el.classList.remove('hidden'));
+                oneTimeTexts.forEach(el => el.classList.add('hidden'));
+                monthlyTexts.forEach(el => el.classList.remove('hidden'));
+            } else {
+                oneTimePrices.forEach(el => el.classList.remove('hidden'));
+                monthlyPrices.forEach(el => el.classList.add('hidden'));
+                oneTimeTexts.forEach(el => el.classList.remove('hidden'));
+                monthlyTexts.forEach(el => el.classList.add('hidden'));
+            }
+        });
+
+        // FAQ toggle
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+</body>
+</html>

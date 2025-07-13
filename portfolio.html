@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Our Success Stories | PineCoder.in</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore PineCoder.in's portfolio of successful algorithmic trading strategies. Real results from NIFTY options, BankNifty scalping, and multi-stock momentum strategies.">
+    <meta name="keywords" content="algo trading portfolio, trading strategy results, NIFTY options automation, BankNifty scalping bot, trading performance">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-gray-300">
+
+    <!-- Navigation (Same as homepage) -->
+    <nav id="navbar" class="sticky top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold">
+                        <span class="text-white">Pine</span><span class="gradient-text">Coder.in</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-300 hover:text-white transition-colors">Home</a>
+                    <a href="/#services" class="text-gray-300 hover:text-white transition-colors">Services</a>
+                    <a href="/portfolio.html" class="text-white">Portfolio</a>
+                    <a href="/pricing.html" class="text-gray-300 hover:text-white transition-colors">Pricing</a>
+                    <a href="/blog.html" class="text-gray-300 hover:text-white transition-colors">Blog</a>
+                    <a href="/about.html" class="text-gray-300 hover:text-white transition-colors">About</a>
+                    <a href="/contact.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 bg-gradient-to-b from-slate-900 to-slate-950">
+        <div class="absolute inset-0 grid-background opacity-20"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Real Strategies, <span class="gradient-text">Real Results</span>
+                </h1>
+                <p class="text-xl text-gray-400">
+                    Explore our portfolio of successful algorithmic trading strategies delivering consistent returns for our clients
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Overview -->
+    <section class="py-12 bg-slate-900/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-white mb-2">1000+</div>
+                    <p class="text-gray-400">Strategies Built</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-white mb-2">₹50Cr+</div>
+                    <p class="text-gray-400">Daily Volume</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-white mb-2">500+</div>
+                    <p class="text-gray-400">Active Clients</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-white mb-2">68%</div>
+                    <p class="text-gray-400">Avg Win Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="filter-btn active bg-blue-600 text-white px-6 py-2 rounded-lg font-medium" data-filter="all">
+                    All Strategies
+                </button>
+                <button class="filter-btn bg-slate-800 text-gray-300 px-6 py-2 rounded-lg font-medium hover:bg-slate-700" data-filter="options">
+                    Options Trading
+                </button>
+                <button class="filter-btn bg-slate-800 text-gray-300 px-6 py-2 rounded-lg font-medium hover:bg-slate-700" data-filter="intraday">
+                    Intraday
+                </button>
+                <button class="filter-btn bg-slate-800 text-gray-300 px-6 py-2 rounded-lg font-medium hover:bg-slate-700" data-filter="swing">
+                    Swing Trading
+                </button>
+                <button class="filter-btn bg-slate-800 text-gray-300 px-6 py-2 rounded-lg font-medium hover:bg-slate-700" data-filter="scalping">
+                    Scalping
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Strategy 1 - Options -->
+                <div class="portfolio-item" data-category="options">
+                    <div class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-blue-600 transition-all">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-green-600/20 text-green-500 px-3 py-1 rounded-full text-sm font-semibold">Live</span>
+                                <span class="text-gray-500 text-sm">Options Strategy</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-2">NIFTY Iron Condor Pro</h3>
+                            <p class="text-gray-400 mb-4">Advanced iron condor strategy with dynamic adjustments based on IV and market conditions</p>
+                            
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div>
+                                    <p class="text-gray-500 text-sm">Annual Return</p>
+                                    <p class="text-2xl font-bold text-green-500">+38.6%</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Max Drawdown</p>
+                                    <p class="text-2xl font-bold text-white">-6.8%</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Sharpe Ratio</p>
+                                    <p class="text-2xl font-bold text-white">2.45</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Win Rate</p>
+                                    <p class="text-2xl font-bold text-green-500">72%</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-gray-400">Performance</span>
+                                    <span class="text-green-500">Excellent</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex gap-2 mb-4">
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">Python</span>
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">Zerodha</span>
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">AWS</span>
+                            </div>
+                            
+                            <button class="text-blue-500 hover:text-blue-400 font-semibold" onclick="showStrategyDetails('iron-condor')">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 2 - Scalping -->
+                <div class="portfolio-item" data-category="scalping intraday">
+                    <div class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-blue-600 transition-all">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-green-600/20 text-green-500 px-3 py-1 rounded-full text-sm font-semibold">Live</span>
+                                <span class="text-gray-500 text-sm">Scalping Bot</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-2">BankNifty Lightning Scalper</h3>
+                            <p class="text-gray-400 mb-4">High-frequency scalping with ML-based entry signals and microsecond execution</p>
+                            
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div>
+                                    <p class="text-gray-500 text-sm">Daily Avg P&L</p>
+                                    <p class="text-2xl font-bold text-green-500">₹12,350</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Win Rate</p>
+                                    <p class="text-2xl font-bold text-white">68.4%</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Trades/Day</p>
+                                    <p class="text-2xl font-bold text-white">45-60</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Risk:Reward</p>
+                                    <p class="text-2xl font-bold text-green-500">1:1.8</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-gray-400">Performance</span>
+                                    <span class="text-green-500">Very Good</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex gap-2 mb-4">
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">Node.js</span>
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">Upstox</span>
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">Co-located</span>
+                            </div>
+                            
+                            <button class="text-blue-500 hover:text-blue-400 font-semibold" onclick="showStrategyDetails('scalper')">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 3 - Swing -->
+                <div class="portfolio-item" data-category="swing">
+                    <div class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-blue-600 transition-all">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-green-600/20 text-green-500 px-3 py-1 rounded-full text-sm font-semibold">Live</span>
+                                <span class="text-gray-500 text-sm">Swing Trading</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-2">Multi-Stock Momentum Pro</h3>
+                            <p class="text-gray-400 mb-4">Momentum-based stock selection across NSE500 with position management</p>
+                            
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div>
+                                    <p class="text-gray-500 text-sm">CAGR</p>
+                                    <p class="text-2xl font-bold text-green-500">+52.3%</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Sharpe Ratio</p>
+                                    <p class="text-2xl font-bold text-white">2.84</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Active Since</p>
+                                    <p class="text-2xl font-bold text-white">2022</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Avg Hold</p>
+                                    <p class="text-2xl font-bold text-white">5-7d</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-gray-400">Performance</span>
+                                    <span class="text-green-500">Excellent</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex gap-2 mb-4">
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">Python</span>
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">Angel One</span>
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">AI/ML</span>
+                            </div>
+                            
+                            <button class="text-blue-500 hover:text-blue-400 font-semibold" onclick="showStrategyDetails('momentum')">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 4 - Options -->
+                <div class="portfolio-item" data-category="options">
+                    <div class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-blue-600 transition-all">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-green-600/20 text-green-500 px-3 py-1 rounded-full text-sm font-semibold">Live</span>
+                                <span class="text-gray-500 text-sm">Options Strategy</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-2">Weekly Expiry Theta Decay</h3>
+                            <p class="text-gray-400 mb-4">Captures theta decay in weekly options with hedged positions</p>
+                            
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div>
+                                    <p class="text-gray-500 text-sm">Monthly Return</p>
+                                    <p class="text-2xl font-bold text-green-500">+3.8%</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Max DD</p>
+                                    <p class="text-2xl font-bold text-white">-4.2%</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Win Rate</p>
+                                    <p class="text-2xl font-bold text-green-500">82%</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Consistency</p>
+                                    <p class="text-2xl font-bold text-white">94%</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-gray-400">Performance</span>
+                                    <span class="text-green-500">Very Good</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex gap-2 mb-4">
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">Pine Script</span>
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">Zerodha</span>
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">Automated</span>
+                            </div>
+                            
+                            <button class="text-blue-500 hover:text-blue-400 font-semibold" onclick="showStrategyDetails('theta')">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 5 - Intraday -->
+                <div class="portfolio-item" data-category="intraday">
+                    <div class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-blue-600 transition-all">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-green-600/20 text-green-500 px-3 py-1 rounded-full text-sm font-semibold">Live</span>
+                                <span class="text-gray-500 text-sm">Intraday System</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-2">NIFTY ORB Breakout</h3>
+                            <p class="text-gray-400 mb-4">Opening range breakout with multi-timeframe confirmation</p>
+                            
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div>
+                                    <p class="text-gray-500 text-sm">Avg Daily P&L</p>
+                                    <p class="text-2xl font-bold text-green-500">₹8,500</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Win Rate</p>
+                                    <p class="text-2xl font-bold text-white">64%</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Profit Factor</p>
+                                    <p class="text-2xl font-bold text-white">2.1</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Trade Freq</p>
+                                    <p class="text-2xl font-bold text-white">2-3/day</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-gray-400">Performance</span>
+                                    <span class="text-green-500">Good</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill" style="width: 78%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex gap-2 mb-4">
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">Python</span>
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">Alice Blue</span>
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">Cloud</span>
+                            </div>
+                            
+                            <button class="text-blue-500 hover:text-blue-400 font-semibold" onclick="showStrategyDetails('orb')">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 6 - Swing -->
+                <div class="portfolio-item" data-category="swing">
+                    <div class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-blue-600 transition-all">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-green-600/20 text-green-500 px-3 py-1 rounded-full text-sm font-semibold">Live</span>
+                                <span class="text-gray-500 text-sm">Swing Trading</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-2">Sector Rotation Strategy</h3>
+                            <p class="text-gray-400 mb-4">Rotates between top performing sectors based on relative strength</p>
+                            
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div>
+                                    <p class="text-gray-500 text-sm">Annual Return</p>
+                                    <p class="text-2xl font-bold text-green-500">+45.2%</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Max DD</p>
+                                    <p class="text-2xl font-bold text-white">-12.3%</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Sharpe</p>
+                                    <p class="text-2xl font-bold text-white">2.21</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm">Sectors</p>
+                                    <p class="text-2xl font-bold text-white">8</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-gray-400">Performance</span>
+                                    <span class="text-green-500">Very Good</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill" style="width: 86%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex gap-2 mb-4">
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">Python</span>
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">Multi-broker</span>
+                                <span class="text-xs bg-slate-800 px-2 py-1 rounded">ETFs</span>
+                            </div>
+                            
+                            <button class="text-blue-500 hover:text-blue-400 font-semibold" onclick="showStrategyDetails('sector')">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Comparison -->
+    <section class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">
+                Strategy <span class="gradient-text">Performance Comparison</span>
+            </h2>
+            
+            <div class="bg-slate-900 rounded-xl p-8 border border-slate-800">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="border-b border-slate-800">
+                                <th class="py-4 px-4 text-gray-400 font-semibold">Strategy Name</th>
+                                <th class="py-4 px-4 text-gray-400 font-semibold">Type</th>
+                                <th class="py-4 px-4 text-gray-400 font-semibold">Annual Return</th>
+                                <th class="py-4 px-4 text-gray-400 font-semibold">Max DD</th>
+                                <th class="py-4 px-4 text-gray-400 font-semibold">Sharpe Ratio</th>
+                                <th class="py-4 px-4 text-gray-400 font-semibold">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-slate-800 hover:bg-slate-800/50 transition-colors">
+                                <td class="py-4 px-4 text-white font-medium">Multi-Stock Momentum Pro</td>
+                                <td class="py-4 px-4 text-gray-300">Swing</td>
+                                <td class="py-4 px-4 text-green-500 font-semibold">+52.3%</td>
+                                <td class="py-4 px-4 text-gray-300">-12.3%</td>
+                                <td class="py-4 px-4 text-gray-300">2.84</td>
+                                <td class="py-4 px-4">
+                                    <span class="bg-green-600/20 text-green-500 px-2 py-1 rounded text-sm">Live</span>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-slate-800 hover:bg-slate-800/50 transition-colors">
+                                <td class="py-4 px-4 text-white font-medium">Sector Rotation Strategy</td>
+                                <td class="py-4 px-4 text-gray-300">Swing</td>
+                                <td class="py-4 px-4 text-green-500 font-semibold">+45.2%</td>
+                                <td class="py-4 px-4 text-gray-300">-12.3%</td>
+                                <td class="py-4 px-4 text-gray-300">2.21</td>
+                                <td class="py-4 px-4">
+                                    <span class="bg-green-600/20 text-green-500 px-2 py-1 rounded text-sm">Live</span>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-slate-800 hover:bg-slate-800/50 transition-colors">
+                                <td class="py-4 px-4 text-white font-medium">Weekly Expiry Theta Decay</td>
+                                <td class="py-4 px-4 text-gray-300">Options</td>
+                                <td class="py-4 px-4 text-green-500 font-semibold">+45.6%</td>
+                                <td class="py-4 px-4 text-gray-300">-4.2%</td>
+                                <td class="py-4 px-4 text-gray-300">3.85</td>
+                                <td class="py-4 px-4">
+                                    <span class="bg-green-600/20 text-green-500 px-2 py-1 rounded text-sm">Live</span>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-slate-800 hover:bg-slate-800/50 transition-colors">
+                                <td class="py-4 px-4 text-white font-medium">NIFTY Iron Condor Pro</td>
+                                <td class="py-4 px-4 text-gray-300">Options</td>
+                                <td class="py-4 px-4 text-green-500 font-semibold">+38.6%</td>
+                                <td class="py-4 px-4 text-gray-300">-6.8%</td>
+                                <td class="py-4 px-4 text-gray-300">2.45</td>
+                                <td class="py-4 px-4">
+                                    <span class="bg-green-600/20 text-green-500 px-2 py-1 rounded text-sm">Live</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">
+                What Our <span class="gradient-text">Clients Say</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "The Iron Condor strategy has been a game-changer for my portfolio. Consistent monthly returns with minimal drawdown. The team's support is exceptional!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://ui-avatars.com/api/?name=Anand+Verma&background=3b82f6&color=fff" alt="Anand Verma" class="w-12 h-12 rounded-full">
+                        <div>
+                            <div class="text-white font-semibold">Anand Verma</div>
+                            <div class="text-sm text-gray-500">Options Trader, Pune</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                        <i class="fas fa-star text-yellow-500"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        "The scalping bot is incredible! Making consistent profits daily with minimal supervision. Worth every penny invested."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://ui-avatars.com/api/?name=Deepak+Shah&background=10b981&color=fff" alt="Deepak Shah" class="w-12 h-12 rounded-full">
+                        <div>
+                            <div class="text-white font-semibold">Deepak Shah</div>
+                            <div class="text-sm text-gray-500">Day Trader, Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to Build Your Strategy?</h2>
+            <p class="text-xl text-gray-400 mb-8">Join 500+ traders who trust us with their algorithmic trading needs</p>
+            <a href="/contact.html" class="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                Get Started Today <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-500">
+                    © 2025 PineCoder.in. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Strategy Details Modal -->
+    <div id="strategyModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-slate-900 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto border border-slate-800">
+            <div class="p-8">
+                <div class="flex justify-between items-start mb-6">
+                    <h3 id="modalTitle" class="text-2xl font-bold text-white"></h3>
+                    <button onclick="closeModal()" class="text-gray-400 hover:text-white">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <div id="modalContent">
+                    <!-- Dynamic content will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-blur');
+            } else {
+                navbar.classList.remove('navbar-blur');
+            }
+        });
+
+        // Portfolio Filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-blue-600', 'text-white');
+                    b.classList.add('bg-slate-800', 'text-gray-300');
+                });
+                btn.classList.remove('bg-slate-800', 'text-gray-300');
+                btn.classList.add('bg-blue-600', 'text-white');
+
+                // Filter items
+                const filter = btn.getAttribute('data-filter');
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category').includes(filter)) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Strategy Details Modal
+        const strategyDetails = {
+            'iron-condor': {
+                title: 'NIFTY Iron Condor Pro',
+                content: `
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-lg font-semibold text-white mb-3">Strategy Overview</h4>
+                            <p class="text-gray-400">
+                                Our NIFTY Iron Condor Pro is an advanced options strategy that capitalizes on range-bound market conditions. 
+                                The algorithm dynamically adjusts strike prices based on implied volatility and market conditions to maximize 
+                                theta decay while minimizing risk.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-white mb-3">Key Features</h4>
+                            <ul class="space-y-2 text-gray-400">
+                                <li><i class="fas fa-check text-green-500 mr-2"></i>Dynamic strike selection based on IV percentile</li>
+                                <li><i class="fas fa-check text-green-500 mr-2"></i>Automatic adjustments when tested</li>
+                                <li><i class="fas fa-check text-green-500 mr-2"></i>Smart exit based on profit targets or stop loss</li>
+                                <li><i class="fas fa-check text-green-500 mr-2"></i>Position sizing based on Kelly Criterion</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-white mb-3">Performance Metrics</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-slate-800 p-4 rounded-lg">
+                                    <p class="text-gray-500 text-sm">Average Monthly Return</p>
+                                    <p class="text-2xl font-bold text-green-500">3.2%</p>
+                                </div>
+                                <div class="bg-slate-800 p-4 rounded-lg">
+                                    <p class="text-gray-500 text-sm">Winning Months</p>
+                                    <p class="text-2xl font-bold text-white">85%</p>
+                                </div>
+                                <div class="bg-slate-800 p-4 rounded-lg">
+                                    <p class="text-gray-500 text-sm">Risk-Adjusted Return</p>
+                                    <p class="text-2xl font-bold text-white">2.45</p>
+                                </div>
+                                <div class="bg-slate-800 p-4 rounded-lg">
+                                    <p class="text-gray-500 text-sm">Capital Required</p>
+                                    <p class="text-2xl font-bold text-white">₹5L</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            'scalper': {
+                title: 'BankNifty Lightning Scalper',
+                content: `
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-lg font-semibold text-white mb-3">Strategy Overview</h4>
+                            <p class="text-gray-400">
+                                High-frequency scalping bot designed for BankNifty futures and options. Uses machine learning models 
+                                trained on tick data to identify micro-trends and execute trades with millisecond precision.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-white mb-3">Technical Architecture</h4>
+                            <ul class="space-y-2 text-gray-400">
+                                <li><i class="fas fa-check text-green-500 mr-2"></i>Co-located servers for ultra-low latency</li>
+                                <li><i class="fas fa-check text-green-500 mr-2"></i>ML models for entry/exit signals</li>
+                                <li><i class="fas fa-check text-green-500 mr-2"></i>Risk management with circuit breakers</li>
+                                <li><i class="fas fa-check text-green-500 mr-2"></i>Real-time performance monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+        function showStrategyDetails(strategyId) {
+            const modal = document.getElementById('strategyModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalContent = document.getElementById('modalContent');
+            
+            if (strategyDetails[strategyId]) {
+                modalTitle.textContent = strategyDetails[strategyId].title;
+                modalContent.innerHTML = strategyDetails[strategyId].content;
+                modal.classList.remove('hidden');
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('strategyModal').classList.add('hidden');
+        }
+
+        // Close modal on outside click
+        document.getElementById('strategyModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
