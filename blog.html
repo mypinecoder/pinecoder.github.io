@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - PineCoder.in</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Read the latest articles and insights on algorithmic trading from the PineCoder.in blog.">
+    <meta name="keywords" content="algo trading blog, trading articles, PineCoder.in blog">
+    <meta name="author" content="PineCoder.in">
+    <meta property="og:title" content="Blog - PineCoder.in">
+    <meta property="og:description" content="Latest articles and insights on algorithmic trading.">
+    <meta property="og:image" content="/og-image.jpg">
+    <meta property="og:url" content="https://pinecoder.in/blog.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://pinecoder.in/blog.html">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-gray-300">
+
+    <!-- Top Bar -->
+    <div class="bg-slate-900 border-b border-slate-800 py-2">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-between items-center text-sm">
+                <div class="flex items-center gap-4">
+                    <a href="tel:+917499462967" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fas fa-phone mr-1"></i> +91 749-946-2967
+                    </a>
+                    <a href="mailto:contact@pinecoder.in" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fas fa-envelope mr-1"></i> contact@pinecoder.in
+                    </a>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="https://twitter.com/pinecoderin" target="_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/pinecoder" target="_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@pinecoderin" target="_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://t.me/pinecoderin" target="_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://www.instagram.com/pinecoderin" target="_blank" class="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="sticky top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold">
+                        <span class="text-white">Pine</span><span class="gradient-text">Coder.in</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-300 hover:text-white transition-colors">Home</a>
+                    <a href="/services.html" class="text-gray-300 hover:text-white transition-colors">Services</a>
+                    <a href="/portfolio.html" class="text-gray-300 hover:text-white transition-colors">Portfolio</a>
+                    <a href="/pricing.html" class="text-gray-300 hover:text-white transition-colors">Pricing</a>
+                    <a href="/blog.html" class="text-white transition-colors">Blog</a>
+                    <a href="/about.html" class="text-gray-300 hover:text-white transition-colors">About</a>
+                    <a href="/contact.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors animated-button">
+                        Get Started
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800">
+            <div class="px-4 py-3 space-y-3">
+                <a href="/" class="block text-gray-300 hover:text-white transition-colors">Home</a>
+                <a href="/services.html" class="block text-gray-300 hover:text-white transition-colors">Services</a>
+                <a href="/portfolio.html" class="block text-gray-300 hover:text-white transition-colors">Portfolio</a>
+                <a href="/pricing.html" class="block text-gray-300 hover:text-white transition-colors">Pricing</a>
+                <a href="/blog.html" class="block text-white transition-colors">Blog</a>
+                <a href="/about.html" class="block text-gray-300 hover:text-white transition-colors">About</a>
+                <a href="/contact.html" class="block bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors text-center">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Blog</h1>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Insights, tutorials, and market analysis from our team of experts.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-blue-600 transition-all">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-3">Getting Started with Algorithmic Trading</h3>
+                        <p class="text-gray-400 mb-4">
+                            A beginner's guide to understanding the fundamentals of algorithmic trading and how to get started.
+                        </p>
+                        <span class="text-sm text-gray-500">October 26, 2023</span>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-blue-600 transition-all">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-3">Top 5 Backtesting Mistakes to Avoid</h3>
+                        <p class="text-gray-400 mb-4">
+                            Learn about the common pitfalls in backtesting and how to avoid them to get more reliable results.
+                        </p>
+                        <span class="text-sm text-gray-500">October 20, 2023</span>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-blue-600 transition-all">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-3">The Role of AI in Modern Trading</h3>
+                        <p class="text-gray-400 mb-4">
+                            An overview of how artificial intelligence and machine learning are revolutionizing the trading industry.
+                        </p>
+                        <span class="text-sm text-gray-500">October 15, 2023</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">
+                        <span class="text-white">Pine</span><span class="gradient-text">Coder.in</span>
+                    </h3>
+                    <p class="text-gray-400 mb-4">
+                        India's premier algorithmic trading development company. Transform your trading ideas into profitable algorithms.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/strategy-development.html" class="text-gray-400 hover:text-white transition-colors">Strategy Development</a></li>
+                        <li><a href="/backtesting.html" class="text-gray-400 hover:text-white transition-colors">Backtesting Services</a></li>
+                        <li><a href="/automation.html" class="text-gray-400 hover:text-white transition-colors">Trading Automation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="/portfolio.html" class="text-gray-400 hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="/faq.html" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt text-blue-500 mt-1"></i>
+                            <span class="text-gray-400">Nagpur, Maharashtra, India</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-phone text-blue-500 mt-1"></i>
+                            <a href="tel:+917499462967" class="text-gray-400 hover:text-white transition-colors">+91 749-946-2967</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-envelope text-blue-500 mt-1"></i>
+                            <a href="mailto:contact@pinecoder.in" class="text-gray-400 hover:text-white transition-colors">contact@pinecoder.in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-500 text-sm">
+                        © 2025 PineCoder.in. All rights reserved.
+                    </p>
+                    <div class="flex gap-6 text-sm">
+                        <a href="/privacy-policy.html" class="text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="/terms-of-service.html" class="text-gray-500 hover:text-white transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
