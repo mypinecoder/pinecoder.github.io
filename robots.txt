@@ -1,2 +1,11 @@
+# Robots.txt for PineCoder.in
+# https://pinecoder.in
+
 User-agent: *
 Allow: /
+
+# Sitemap location
+Sitemap: https://pinecoder.in/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
