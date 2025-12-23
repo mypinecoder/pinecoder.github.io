@@ -257,32 +257,88 @@
         </div>
     </section>
 
-    <!-- FAQ Contact Section -->
-    <section class="py-20 bg-slate-900/50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl font-bold text-white mb-4">Frequently Asked Questions</h2>
-                <p class="text-gray-400 mb-8">Can't find what you're looking for? Contact us directly.</p>
-                
-                <div class="grid md:grid-cols-2 gap-6 text-left">
-                    <div class="bg-slate-900 p-6 rounded-lg border border-slate-800">
-                        <h3 class="text-lg font-semibold text-white mb-2">What's the typical response time?</h3>
-                        <p class="text-gray-400 text-sm">We respond to all inquiries within 2-4 hours during business hours (Mon-Fri, 9 AM - 6 PM IST). WhatsApp messages get the quickest response. Holidays as per Nagpur, Maharashtra.</p>
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                    Frequently Asked <span class="gradient-text">Questions</span>
+                </h2>
+                <p class="text-xl text-gray-400">
+                    Everything you need to know about our services
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-800/50 transition-colors" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-white">What's the typical response time?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 pt-0 text-gray-400">
+                            We respond to all inquiries within 2-4 hours during business hours (Mon-Fri, 9 AM - 6 PM IST). WhatsApp messages get the quickest response. Holidays as per Nagpur, Maharashtra.
+                        </div>
                     </div>
-                    
-                    <div class="bg-slate-900 p-6 rounded-lg border border-slate-800">
-                        <h3 class="text-lg font-semibold text-white mb-2">Do you offer free consultations?</h3>
-                        <p class="text-gray-400 text-sm">Yes! We offer a 30-minute free consultation to understand your requirements and provide recommendations.</p>
+                </div>
+
+                <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-800/50 transition-colors" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-white">What programming languages do you support?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 pt-0 text-gray-400">
+                            We support all major trading languages including Pine Script (TradingView), Python, MQL4/5 (MetaTrader), AFL (AmiBroker), and JavaScript/Node.js. We can also work with C++, Java, and other languages based on your requirements.
+                        </div>
                     </div>
-                    
-                    <div class="bg-slate-900 p-6 rounded-lg border border-slate-800">
-                        <h3 class="text-lg font-semibold text-white mb-2">What information should I prepare?</h3>
-                        <p class="text-gray-400 text-sm">Your trading strategy logic, preferred broker, capital size, and any specific requirements you have.</p>
+                </div>
+
+                <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-800/50 transition-colors" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-white">How long does it take to develop a strategy?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 pt-0 text-gray-400">
+                            Simple strategies can be developed in 3-5 days, while complex strategies with multiple indicators and risk management may take 7-14 days. We provide accurate timelines after understanding your requirements during the discovery call.
+                        </div>
                     </div>
-                    
-                    <div class="bg-slate-900 p-6 rounded-lg border border-slate-800">
-                        <h3 class="text-lg font-semibold text-white mb-2">Are consultations confidential?</h3>
-                        <p class="text-gray-400 text-sm">Absolutely. We sign NDAs and maintain strict confidentiality about all client strategies and discussions.</p>
+                </div>
+
+                <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-800/50 transition-colors" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-white">Do you provide source code?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 pt-0 text-gray-400">
+                            Yes, we provide complete source code with detailed documentation. You own 100% of the code we develop for you. We also offer training sessions to help you understand and modify the code if needed.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-800/50 transition-colors" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-white">What about data security and confidentiality?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 pt-0 text-gray-400">
+                            We take security very seriously. All strategies are encrypted and stored securely. We sign NDAs upon request, and your trading logic remains strictly confidential.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-800/50 transition-colors" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-semibold text-white">Do you offer ongoing support?</span>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 pt-0 text-gray-400">
+                            Yes, we provide comprehensive post-deployment support including bug fixes, performance optimization, and strategy modifications. Our support is available Monday to Friday, 9 AM - 6 PM IST.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -318,9 +374,7 @@
                     <ul class="space-y-2">
                         <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
                         <li><a href="index.html#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
-                        <li><a href="index.html#faq" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
-                        <li><a href="https://docs.pinecoder.in" target="_blank" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
-                        <li><a href="https://openalgo.in" target="_blank" class="text-gray-400 hover:text-white transition-colors">OpenAlgo <i class="fas fa-external-link-alt text-xs"></i></a></li>
+                        <li><a href="contact.html#faq" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
                     </ul>
                 </div>
 
@@ -397,6 +451,20 @@
             // Reset form
             this.reset();
         });
+
+        // FAQ toggle function
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
     </script>
 </body>
 </html>
